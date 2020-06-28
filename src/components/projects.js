@@ -137,7 +137,7 @@ class Projects extends Component {
 
     return (
       <ProjectsContainer>
-        <ProjectsTitle ref={el => (this.projects = el)}>Smaller Projects</ProjectsTitle>
+        <ProjectsTitle ref={el => (this.projects = el)}>Other Projects</ProjectsTitle>
         <ProjectsGrid>
           <TransitionGroup className="projects">
             {projectsToShow &&

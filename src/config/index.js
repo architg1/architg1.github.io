@@ -3,7 +3,7 @@ module.exports = {
   siteDescription: 'I love to create',
   siteKeywords:
     'Archit Gupta, Archit, Gupta, guptaarchit, UIUC, data science, machine learning',
-  siteUrl: 'http://guptaarchit.me/',
+  siteUrl: 'http://www.architgupta.xyz/',
   siteLanguage: 'en_US',
 
   name: 'Archit Gupta',

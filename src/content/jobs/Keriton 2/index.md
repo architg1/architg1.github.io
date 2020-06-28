@@ -1,6 +1,6 @@
 ---
 date: '2020-6-29'
-title: 'Data Analysis and Visualisation Fellow'
+title: 'Data Analysis and Visualization Fellow'
 company: 'City of Urbana'
 location: 'Urbana, USA'
 range: 'June 2020 - August 2020'

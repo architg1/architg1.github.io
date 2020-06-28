@@ -1,7 +1,7 @@
 ---
 date: '2020-6-2'
 title: 'Data Analyst and Project Lead'
-company: 'Coronavirus Visualisation Team'
+company: 'Coronavirus Visualization Team'
 location: 'Massachusetts, USA'
 range: 'June 2020 - Present'
 url: 'https://www.understandcovid.org/'

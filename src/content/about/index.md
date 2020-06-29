@@ -17,4 +17,4 @@ I'm a freshman at [UIUC](https://illinois.edu/) pursuing Computer Science and St
 
 I'm also passionate about computer vision and natural language processing among many other machine learning applications. My other interests include venture capital, cinema, writing, cricket, and politics.
 
-My favourite technology stack:
+Here are a few technologies I've been working with recently:

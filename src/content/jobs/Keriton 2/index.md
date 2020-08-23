@@ -1,10 +1,12 @@
 ---
 date: '2020-6-29'
-title: 'Data Analysis and Visualization Fellow'
+title: 'Data Analysis and Visualisation Fellow'
 company: 'City of Urbana'
 location: 'Urbana, USA'
 range: 'June 2020 - August 2020'
 url: 'https://www.urbanaillinois.us/'
 ---
 
-- Working with the Urbana Police Department to analyze traffic stop data to identify and understand patterns and disparities
+- Examined the race composition of traffic stops in Urbana with respect to block-wise demographics
+- Developed a relationship between race, street and probability of being stopped by the police
+- Created interactive maps that explored the correlation between race, gender and traffic stops for different streets

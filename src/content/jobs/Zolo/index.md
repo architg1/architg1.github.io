@@ -7,5 +7,6 @@ range: 'May 2019 - June 2019'
 url: 'https://delhi.gov.in/'
 ---
 
-- Mapped public facilities in all the sub-regions of Shakurbasti (region of Delhi) and created a comprehensive database.
-- Evaluated and analyzed the future requirements of each ward by analyzing its demographics using Pandas and NumPy.
+- Mapped public facilities in all the sub-regions of Shakurbasti (region of Delhi) and created a comprehensive database
+- Evaluated and forecasted the future requirements of each ward by analysing current demographics using
+Pandas and NumPy

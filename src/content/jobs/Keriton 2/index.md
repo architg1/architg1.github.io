@@ -7,6 +7,6 @@ range: 'June 2020 - August 2020'
 url: 'https://www.urbanaillinois.us/'
 ---
 
-- Examined the race composition of traffic stops in Urbana with respect to block-wise demographics
+- Examined the race composition of traffic stops in Urbana with respect to block-wise demographics
 - Developed a relationship between race, street and probability of being stopped by the police
 - Created interactive maps that explored the correlation between race, gender and traffic stops for different streets

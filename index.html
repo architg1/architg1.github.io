@@ -22,7 +22,7 @@
     --serif: 'Instrument Serif', Georgia, serif;
     --sans: 'DM Sans', system-ui, sans-serif;
     --mono: 'JetBrains Mono', monospace;
-    --max-w: 860px;
+    --max-w: min(90vw, 1200px);
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -152,6 +152,10 @@
     padding: 0 2rem;
     min-height: 100vh;
   }
+  @media (max-width: 480px) {
+    main { padding: 0 1.1rem; }
+    .nav-inner { padding: 0 1.1rem; }
+  }
 
   .page {
     display: none;
@@ -183,8 +187,8 @@
     flex-shrink: 0;
   }
   .profile-img-wrap {
-    width: 155px;
-    height: 155px;
+    width: 185px;
+    height: 185px;
     border-radius: 10px;
     background: var(--bg-alt);
     border: 1px solid var(--border);

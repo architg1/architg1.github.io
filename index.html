@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Archit — Neuroscience Researcher</title>
+<title>Archit Gupta — Neuroscience Researcher</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -168,21 +168,80 @@
   .hero {
     padding: 4rem 0 3rem;
   }
+  .hero-inner {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+  .hero-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .hero-photo {
+    flex-shrink: 0;
+    padding-top: 0.5rem;
+  }
+  .profile-img-wrap {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: var(--bg-alt);
+    border: 2px solid var(--border);
+    overflow: hidden;
+    position: relative;
+  }
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* Initials placeholder shown when no image loads */
+  .profile-img-wrap::after {
+    content: 'AG';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    color: var(--text-muted);
+    z-index: -1;
+  }
+  @media (max-width: 640px) {
+    .hero-inner {
+      flex-direction: column-reverse;
+      gap: 1.75rem;
+    }
+    .hero-photo { align-self: flex-start; }
+    .profile-img-wrap { width: 130px; height: 130px; }
+    .profile-img-wrap::after { font-size: 1.75rem; }
+  }
   .hero-greeting {
     font-family: var(--mono);
     font-size: 0.8rem;
     color: var(--accent);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     font-weight: 500;
+  }
+  .hero-name {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 5.5vw, 3.25rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
   }
   .hero h1 {
     font-family: var(--serif);
-    font-size: clamp(2.5rem, 6vw, 3.75rem);
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    font-size: clamp(1.4rem, 3.5vw, 1.85rem);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
     margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    font-weight: 400;
   }
   .hero h1 em {
     color: var(--accent);
@@ -594,7 +653,7 @@
 <!-- ─── NAVIGATION ─── -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a class="nav-logo" onclick="navigate('home')">Archit.</a>
+    <a class="nav-logo" onclick="navigate('home')">Archit Gupta</a>
     <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -614,18 +673,29 @@
   <!-- ═══════════ HOME ═══════════ -->
   <div class="page" id="page-home">
     <div class="hero">
-      <div class="hero-greeting">PhD Candidate · Biomedical Sciences</div>
-      <h1>Exploring how <em>neural circuits</em> learn &amp; remember</h1>
-      <p class="hero-desc">
-        I study the cellular and molecular basis of learning and memory using the 
-        <em>Aplysia</em> feeding circuit. My work combines population-level neural recording 
-        with tensor decomposition to understand how experience reshapes circuit dynamics.
-      </p>
-      <div class="hero-links">
-        <a href="mailto:your.email@university.edu">Email ↗</a>
-        <a href="https://scholar.google.com/" target="_blank">Google Scholar ↗</a>
-        <a href="https://github.com/your-username" target="_blank">GitHub ↗</a>
-        <a href="https://twitter.com/" target="_blank">Twitter / X ↗</a>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-greeting">PhD Candidate · Biomedical Sciences</div>
+          <div class="hero-name">Archit Gupta</div>
+          <h1>Exploring how <em>neural circuits</em> learn &amp; remember</h1>
+          <p class="hero-desc">
+            I study the cellular and molecular basis of learning and memory using the
+            <em>Aplysia</em> feeding circuit. My work combines population-level neural recording
+            with tensor decomposition to understand how experience reshapes circuit dynamics.
+          </p>
+          <div class="hero-links">
+            <a href="mailto:your.email@university.edu">Email ↗</a>
+            <a href="https://scholar.google.com/" target="_blank">Google Scholar ↗</a>
+            <a href="https://github.com/your-username" target="_blank">GitHub ↗</a>
+            <a href="https://twitter.com/" target="_blank">Twitter / X ↗</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <!-- Replace assets/profile.jpg with your photo -->
+          <div class="profile-img-wrap">
+            <img src="assets/profile.jpg" alt="Archit Gupta" class="profile-img">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -876,7 +946,7 @@
 
 <!-- ─── FOOTER ─── -->
 <footer>
-  <span>&copy; 2026 Archit. Built with care.</span>
+  <span>&copy; 2026 Archit Gupta. Built with care.</span>
   <div class="footer-links">
     <a href="mailto:your.email@university.edu">Email</a>
     <a href="https://github.com/your-username" target="_blank">GitHub</a>

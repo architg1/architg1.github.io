@@ -1,6 +1,6 @@
 
   // ─── ROUTING ───
-  const pages = ['home', 'publications', 'projects', 'blog', 'cv'];
+  const pages = ['home', 'publications', 'projects', 'blog', 'cv', 'photos'];
 
   function navigate(page) {
     window.location.hash = page;

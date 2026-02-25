@@ -609,7 +609,7 @@
   .cv-entry {
     padding: 1rem 0;
     display: grid;
-    grid-template-columns: 140px 1fr;
+    grid-template-columns: 175px 1fr;
     gap: 1.5rem;
   }
   @media (max-width: 640px) {
@@ -624,6 +624,7 @@
     color: var(--text-muted);
     letter-spacing: 0.03em;
     padding-top: 0.15rem;
+    white-space: nowrap;
   }
   .cv-content h3 {
     font-size: 1rem;

@@ -259,11 +259,59 @@
     font-style: italic;
   }
   .hero-desc {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--text-muted);
-    max-width: 580px;
     line-height: 1.75;
     margin-bottom: 2.5rem;
+  }
+  .hero-bg-section {
+    margin-top: 2.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+  }
+  .hero-bg-section h2 {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.6rem;
+  }
+  .hero-bg-section p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .hero-interests {
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+  .hero-interests-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+  .hero-interests ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .hero-interests li {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    padding-left: 0.85rem;
+    position: relative;
+  }
+  .hero-interests li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
   }
   .hero-links {
     display: flex;
@@ -348,7 +396,6 @@
   .page-header p {
     color: var(--text-muted);
     font-size: 1rem;
-    max-width: 520px;
   }
 
   /* ─── PUBLICATIONS ─── */
@@ -700,6 +747,16 @@
           <div class="profile-img-wrap">
             <img src="assets/profile.jpg" alt="Archit Gupta" class="profile-img">
           </div>
+          <div class="hero-interests">
+            <div class="hero-interests-label">Research Interests</div>
+            <ul>
+              <li>Motor learning &amp; priming</li>
+              <li>Neural population dynamics</li>
+              <li>Tensor decomposition</li>
+              <li>Circuit state mapping</li>
+              <li>Invertebrate neuroscience</li>
+            </ul>
+          </div>
         </div>
         <div class="hero-text">
           <div class="hero-greeting">PhD Student · Neuroscience</div>
@@ -716,6 +773,13 @@
             <a href="https://scholar.google.com/citations?user=xn_Nd5kAAAAJ&hl=en" target="_blank">Google Scholar ↗</a>
             <a href="https://github.com/architg1" target="_blank">GitHub ↗</a>
             <a href="https://x.com/architgx" target="_blank">Twitter / X ↗</a>
+          </div>
+          <div class="hero-bg-section">
+            <h2>Background</h2>
+            <p>
+              [Add a short paragraph here — e.g. where you grew up, your undergrad institution and major,
+              how you got into neuroscience, and what drew you to the MD Anderson UTHealth program.]
+            </p>
           </div>
         </div>
       </div>

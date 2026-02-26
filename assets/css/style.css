@@ -762,3 +762,107 @@
     color: var(--accent);
     letter-spacing: 0.03em;
   }
+
+  /* ─── LONG TEXT: PREVENT OVERFLOW ─── */
+  .hero-school,
+  .cv-org {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* ─── MOBILE: SPACING & LAYOUT (≤640px) ─── */
+  @media (max-width: 640px) {
+    /* Reduce page top padding (nav is 64px; give 16px breathing room) */
+    .page {
+      padding-top: 84px;
+      padding-bottom: 50px;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 1.75rem 0 1.25rem;
+    }
+    .hero-name {
+      font-size: clamp(1.85rem, 9vw, 2.2rem);
+    }
+    .hero-desc {
+      font-size: 0.975rem;
+      margin-bottom: 1.75rem;
+    }
+    .hero-bg-section {
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
+    }
+
+    /* Page headers */
+    .page-header {
+      padding: 1.75rem 0 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Home sections */
+    .home-section {
+      margin-top: 2.5rem;
+      padding-top: 1.75rem;
+    }
+
+    /* CV */
+    .cv-section {
+      margin-bottom: 2rem;
+    }
+    .cv-download {
+      margin-bottom: 2rem;
+      font-size: 0.8rem;
+    }
+
+    /* Research interests — flow horizontally under photo on mobile */
+    .hero-interests ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.75rem;
+    }
+    .hero-interests li {
+      white-space: nowrap;
+    }
+
+    /* Dark mode mobile nav menu */
+    body.dark .nav-links {
+      background: rgba(28, 25, 23, 0.97);
+    }
+  }
+
+  /* ─── MOBILE: SMALL SCREENS (≤480px) ─── */
+  @media (max-width: 480px) {
+    /* Footer: stack vertically */
+    footer {
+      flex-direction: column;
+      padding: 1.5rem 1.1rem;
+      text-align: center;
+      gap: 0.5rem;
+    }
+
+    /* Research areas: single column */
+    .research-areas {
+      grid-template-columns: 1fr;
+    }
+
+    /* Publication links: wrap if needed */
+    .pub-links {
+      flex-wrap: wrap;
+    }
+
+    /* Disable blog hover indent on touch devices (avoids layout shift) */
+    .blog-item:hover {
+      padding-left: 0;
+    }
+
+    /* Page header H1 */
+    .page-header h1 {
+      font-size: clamp(1.6rem, 8vw, 2rem);
+    }
+
+    /* Reduce hero h1 subtitle */
+    .hero h1 {
+      font-size: clamp(1.15rem, 5.5vw, 1.4rem);
+    }
+  }

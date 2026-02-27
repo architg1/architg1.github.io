@@ -254,22 +254,6 @@
     line-height: 1.75;
     margin-bottom: 2.5rem;
   }
-  .hero-bg-section {
-    margin-top: 2.5rem;
-    padding-top: 1.75rem;
-    border-top: 1px solid var(--border);
-  }
-  .hero-bg-section h2 {
-    font-family: var(--serif);
-    font-size: 1.2rem;
-    letter-spacing: -0.02em;
-    margin-bottom: 0.6rem;
-  }
-  .hero-bg-section p {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-  }
   .hero-interests {
     margin-top: 1.5rem;
     padding-top: 1.25rem;
@@ -386,6 +370,12 @@
   .page-header p {
     color: var(--text-muted);
     font-size: 1rem;
+  }
+  #page-projects .page-header::after,
+  #page-blog .page-header::after,
+  #page-cv .page-header::after,
+  #page-photos .page-header::after {
+    display: none;
   }
 
   /* ─── PUBLICATIONS ─── */
@@ -787,10 +777,6 @@
     .hero-desc {
       font-size: 0.975rem;
       margin-bottom: 1.75rem;
-    }
-    .hero-bg-section {
-      margin-top: 1.75rem;
-      padding-top: 1.25rem;
     }
 
     /* Page headers */

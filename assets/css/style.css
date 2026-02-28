@@ -396,7 +396,7 @@
     transition: all var(--transition);
   }
   .pub-item:last-child { border-bottom: none; }
-  .pub-item:hover { padding-left: 0.75rem; }
+  .pub-item:hover { transform: translateX(0.75rem); }
   .pub-title {
     font-weight: 600;
     font-size: 1rem;
@@ -823,9 +823,11 @@
     }
 
     /* Disable hover indent on touch devices (avoids layout shift) */
-    .blog-item:hover,
-    .pub-item:hover {
+    .blog-item:hover {
       padding-left: 0;
+    }
+    .pub-item:hover {
+      transform: none;
     }
 
     /* Page header H1 */

@@ -396,6 +396,7 @@
     transition: all var(--transition);
   }
   .pub-item:last-child { border-bottom: none; }
+  .pub-item:hover { padding-left: 0.75rem; }
   .pub-title {
     font-weight: 600;
     font-size: 1rem;
@@ -821,8 +822,9 @@
       flex-wrap: wrap;
     }
 
-    /* Disable blog hover indent on touch devices (avoids layout shift) */
-    .blog-item:hover {
+    /* Disable hover indent on touch devices (avoids layout shift) */
+    .blog-item:hover,
+    .pub-item:hover {
       padding-left: 0;
     }
 

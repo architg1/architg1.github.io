@@ -402,6 +402,17 @@
     margin-bottom: 0.35rem;
     line-height: 1.45;
   }
+  .pub-title a,
+  .project-card h3 a,
+  .blog-item h3 a {
+    color: var(--text);
+    transition: color var(--transition);
+  }
+  .pub-title a:hover,
+  .project-card h3 a:hover,
+  .blog-item h3 a:hover {
+    color: var(--accent);
+  }
   .pub-authors {
     font-size: 0.875rem;
     color: var(--text-muted);
@@ -415,27 +426,6 @@
     font-size: 0.85rem;
     color: var(--text-muted);
     font-style: italic;
-  }
-  .pub-links {
-    margin-top: 0.6rem;
-    display: flex;
-    gap: 0.75rem;
-  }
-  .pub-link {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    padding: 0.25rem 0.6rem;
-    border-radius: 4px;
-    transition: all var(--transition);
-  }
-  .pub-link:hover {
-    background: var(--accent);
-    color: white;
   }
 
   /* ─── BLOG ─── */
@@ -465,7 +455,7 @@
     margin-bottom: 0.5rem;
     transition: color var(--transition);
   }
-  .blog-item:hover h3 { color: var(--accent); }
+  .blog-item:hover h3 a { color: var(--accent); }
   .blog-item p {
     color: var(--text-muted);
     font-size: 0.9rem;
@@ -547,18 +537,6 @@
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
   }
-  .project-links {
-    display: flex;
-    gap: 0.75rem;
-  }
-  .project-links a {
-    font-family: var(--mono);
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--accent);
-    letter-spacing: 0.03em;
-  }
-  .project-links a:hover { text-decoration: underline; }
 
   /* ─── CV ─── */
   .cv-download {
